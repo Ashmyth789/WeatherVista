@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WeatherVista – Smart Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌦️ WeatherVista</h1>
+      <p id="location">Fetching location...</p>
+    </header>
+
+    <main>
+      <div class="weather-info">
+        <h2 id="temperature">--°C</h2>
+        <p id="condition">Loading...</p>
+        <p id="humidity"></p>
+      </div>
+      <canvas id="weatherCanvas" width="300" height="200"></canvas>
+    </main>
+
+    <footer>
+      <p id="networkStatus">Checking network...</p>
+      <p id="lastUpdated"></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
